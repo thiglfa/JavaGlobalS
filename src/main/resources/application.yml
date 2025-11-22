@@ -7,9 +7,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-      dialect: org.hibernate.dialect.OracleDialect
     properties:
       hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
         format_sql: true
 
   rabbitmq:
@@ -17,16 +17,19 @@ spring:
     port: ${RABBIT_PORT:5672}
     username: ${RABBIT_USER:guest}
     password: ${RABBIT_PASS:guest}
+    listener:
+      simple:
+        auto-startup: true
 
-    security:
-      oauth2:
-        resourceserver:
-          jwt:
-            secret-key: ${JWT_SECRET:12345678901234567890123456789012}
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          secret-key: ${JWT_SECRET:12345678901234567890123456789012}
 
 groq:
   api:
-    key: API_KEY
+    key: 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
   model: llama-3.1-8b-instant
   temperature: 0.2
 

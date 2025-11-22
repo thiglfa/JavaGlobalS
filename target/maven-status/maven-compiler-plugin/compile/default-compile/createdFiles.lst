@@ -1,3 +1,4 @@
+com\wellwork\messaging\WelcomeMessageConsumer.class
 com\wellwork\dto\CheckInCreateDTO.class
 com\wellwork\dto\CheckInRequestDTO.class
 com\wellwork\service\AuthService.class
@@ -7,8 +8,8 @@ com\wellwork\dto\CheckInResponseDTO.class
 com\wellwork\WellWorkApplication.class
 com\wellwork\service\CheckInService.class
 com\wellwork\model\entities\User.class
-com\wellwork\dto\LoginRequest.class
 com\wellwork\dto\UserResponseDTO.class
+com\wellwork\listener\WelcomeListener.class
 com\wellwork\model\entities\CheckIn.class
 com\wellwork\model\enums\EnergyLevel.class
 com\wellwork\dto\GeneratedMessageRequestDTO.class
@@ -16,16 +17,17 @@ com\wellwork\repository\GeneratedMessageRepository.class
 com\wellwork\config\AiConfig.class
 com\wellwork\model\enums\Mood.class
 com\wellwork\dto\UserRequestDTO.class
+com\wellwork\config\RabbitConfig.class
 com\wellwork\dto\GeneratedMessageResponseDTO.class
 com\wellwork\config\SecurityConfig$JwtAuthFilter.class
 com\wellwork\controller\AuthController$LoginResponse.class
 com\wellwork\service\GeneratedMessageService.class
-com\wellwork\dto\LoginResponse.class
 com\wellwork\repository\CheckInRepository.class
 com\wellwork\dto\UserLoginDTO.class
 com\wellwork\model\entities\GeneratedMessage.class
 com\wellwork\security\JwtUtil.class
 com\wellwork\controller\CheckInController.class
+com\wellwork\messaging\WelcomeMessageProducer.class
 com\wellwork\service\UserService.class
 com\wellwork\service\AIService.class
 com\wellwork\config\CacheConfig.class
