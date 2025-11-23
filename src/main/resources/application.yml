@@ -21,7 +21,7 @@ spring:
     password: ${RABBIT_PASS:guest}
     listener:
       simple:
-        auto-startup: false
+        auto-startup: true
 
   security:
     oauth2:
