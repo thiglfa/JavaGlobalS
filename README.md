@@ -53,9 +53,9 @@ Metódos POST, PUT e PATCH requerem um body em formato JSON:
 
 | Método | Endpoint | Descrição | Body JSON |
 |--------|----------|-----------|-----------|
-| POST | `/auth/register` | Cria um novo usuário | `{ "username": "usuario123", "password": "senha123" }` |
-| POST | `/auth/login` | Autentica o usuário e retorna token JWT | `{ "username": "usuario123", "password": "senha123" }` |
-| PUT | `/api/users/{id}/password` | Atualiza senha do próprio usuário |`{ "password": "novaSenha123" }` |
+| POST | `/auth/register` | Cria um novo usuário |
+| POST | `/auth/login` | Autentica o usuário e retorna token JWT |
+
 
 ### Usuários
 
@@ -70,16 +70,24 @@ Metódos POST, PUT e PATCH requerem um body em formato JSON:
 
 | Método | Endpoint | Descrição |
 |--------|----------|-----------|
-| POST | `/api/checkins` | Cria um novo check-in | 
-`{ "mood": "0", "energyLevel": "0", "notes": "Hoje estou me sentindo ótimo!" }` |
 | GET | `/api/checkins` | Lista check-ins do usuário autenticado (paginação). |
 | GET | `/api/checkins/{id}` | Consulta check-in por ID. |
-| PATCH | `/api/checkins/{id}` | Atualiza parcialmente um check-in | 
-`{ "mood": "1", "energyLevel": "1", "notes": "Notas atualizadas" }` |
-| POST | `/api/checkins/{id}/generate-message` | Gera mensagem de bem-estar via IA para o check-in | 
-`{ "checkInId": 123 }` (opcional, pois o ID já está na URL) |
+
+
+Metódos POST, PUT e PATCH requerem um body em formato JSON:
+
+| Método | Endpoint | Descrição | Body JSON |
+|--------|----------|-----------|-----------|
+| POST | `/auth/register` | Cria um novo usuário | `{ "username": "usuario123", "password": "senha123" }` |
+| POST | `/auth/login` | Autentica o usuário e retorna token JWT | `{ "username": "usuario123", "password": "senha123" }` |
+| PUT | `/api/users/{id}/password` | Atualiza senha do próprio usuário |`{ "password": "novaSenha123" }` |
+| POST | `/api/checkins` | Cria um novo check-in | `{ "mood": "0", "energyLevel": "0", "notes": "Hoje estou me sentindo ótimo!" }` |
+| PATCH | `/api/checkins/{id}` | Atualiza parcialmente um check-in | `{ "mood": "1", "energyLevel": "1", "notes": "Notas atualizadas" }` |
+| POST | `/api/checkins/{id}/generate-message` | Gera mensagem de bem-estar via IA para o check-in | `{ "checkInId": 123 }` (opcional, pois o ID já está na URL) |
+
 
 Moods (de 0 a 3): HAPPY, NEUTRAL, SAD, STRESSED.
+
 
 EnergyLevel (de 0 a 2): HIGH, MEDIUM, LOW.
 
