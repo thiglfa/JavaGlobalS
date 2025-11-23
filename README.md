@@ -49,7 +49,7 @@ INTEGRANTES:
 
 ### Autenticação
 
-Metódos POST requerem um body em formato JSON:
+Metódos POST, PUT e PATCH requerem um body em formato JSON:
 
 | Método | Endpoint | Descrição | Body JSON |
 |--------|----------|-----------|-----------|
