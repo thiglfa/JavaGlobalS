@@ -145,7 +145,8 @@ export JWT_SECRET=uma_chave_segura
 3. Rodar o projeto com Maven:
 
 ```bash
-mvn clean spring-boot:run
+mvn clean install
+mvn clean spring-boot:run (ou rodar o arquivo Main do projeto)
 ```
 
 O servidor será iniciado em `http://localhost:8080`.
