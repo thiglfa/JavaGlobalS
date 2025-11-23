@@ -102,7 +102,7 @@ Configuração padrão para Oracle no `application.yml`:
 spring:
   datasource:
     url: jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl
-    username: ${DB_USER}/seu usuário Oracle(seu usuário Oracle)
+    username: ${DB_USER}/seu usuário Oracle
     password: ${DB_PASS}/sua senha Oracle
   jpa:
     hibernate:
