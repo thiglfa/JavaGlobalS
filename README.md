@@ -174,4 +174,5 @@ O servidor será iniciado em `http://localhost:8080`.
 - Todas as requisições para endpoints protegidos exigem um token JWT no header `Authorization: Bearer <token>`.
 - As mensagens de check-in são geradas de forma assíncrona usando `@Async`, garantindo que a criação do check-in não seja bloqueada.
 - RabbitMQ é usado para envio de mensagens de boas-vindas, mas o sistema ignora falhas de conexão para não impactar o fluxo principal.
+- É RECOMENDADO (não obrigatório) ter o serviço do RabbitMQ instalado e ativado ao rodar a aplicação para que a mensageria funcione corretamente. Não é obrigatório e o programa ainda rodará perfeitamente sem o RabbitMQ, mas você perderá o sistema de mensageria.
 
